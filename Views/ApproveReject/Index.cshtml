@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Approve Reject</title>
+</head>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    .heroTitle {
+        padding: 20px;
+        margin: 10px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        background-color: rgb(1, 1, 137);
+        color: #fff;
+        border-radius: 5px;
+    }
+
+    .information {
+        margin: 10px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 510px;
+        border: 1px solid #adadad;
+        background-color: #adadad70;
+        border-radius: 10px;
+    }
+
+    .information:hover {
+        box-shadow: 0 5px 15px #adadad;
+        transition: 0.3s;
+    }
+
+    .information input {
+        margin: 10px;
+        padding: 10px;
+        width: 500px;
+    }
+
+    .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .buttons input {
+        padding: 10px;
+        margin: 20px 20px 50px 20px;
+        width: 100px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .buttons .approve {
+        color: #fff;
+        background-color: #07af07;
+        cursor: pointer;
+    }
+
+    .buttons .reject {
+        color: #fff;
+        background-color: #c61616;
+        cursor: pointer;
+    }
+
+    .alert {
+        background-color: #adadad70;
+        padding: 20px;
+        width: 300px;
+        text-align: center;
+        border-radius: 10px;
+    }
+</style>
+
+ <body>
+    <div class="container">
+        <div class="heroTitle">
+            Approve / Reject
+        </div>
+        <div class="information">
+            <input type="text" disabled="true" value="@ViewBag.name">
+            <input type="number" disabled="true" value="@ViewBag.age">
+            <input type="text" disabled="true" value="@ViewBag.status">
+            <div class="buttons">
+                <input type="submit" class="approve" value="Approve">
+                <input type="submit" class="reject" value="Reject">
+            </div>
+            @*<div class="alert">
+                <h3>Updated Successfully !</h3>
+            </div>*@
+        </div>
+
+    </div>
+</body>
+</html>
