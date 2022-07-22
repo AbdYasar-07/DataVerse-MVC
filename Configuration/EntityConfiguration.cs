@@ -10,5 +10,6 @@
         public string Authority { get; set; }
         public string EntityInternalName { get; set; }
         public string[] Columns { get; set; }
+        public string UpdateColumn { get; set; }
     }
 }
